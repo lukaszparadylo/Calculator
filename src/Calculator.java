@@ -1,16 +1,18 @@
+import java.math.BigDecimal;
+
 public class Calculator {
 
-    private Double sum;
+    private BigDecimal sum;
 
-    public Double addTwoNumbers(Double x, Double y){
-        this.sum = x+y;
+    public BigDecimal addTwoNumbers(BigDecimal x, BigDecimal y){
+        this.sum = x.add(y);
         return this.sum;
     }
-    public Double substractTwoNumbers(Double x, Double y){
-        this.sum = x-y;
+    public BigDecimal substractTwoNumbers(BigDecimal x, BigDecimal y){
+        this.sum = x.subtract(y);
         return this.sum;
     }
-    public Double getSum() {
+    public BigDecimal getSum() {
         return this.sum;
     }
 }
